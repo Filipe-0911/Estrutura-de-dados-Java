@@ -2,7 +2,7 @@ public class PessoaPrioridade implements Comparable<PessoaPrioridade> {
     private String nome;
     private boolean prioridade;
 
-    public PessoaPrioridade(String nome, boolean prioridade){
+    public PessoaPrioridade(String nome, boolean prioridade) {
         this.nome = nome;
         this.prioridade = prioridade;
     }
@@ -22,7 +22,7 @@ public class PessoaPrioridade implements Comparable<PessoaPrioridade> {
         this.prioridade = prioridade;
     }
 
-    public String toString(){
+    public String toString() {
         return "A Pessoa " + this.nome + ", tem prioridade = " + this.prioridade;
     }
 
@@ -30,8 +30,10 @@ public class PessoaPrioridade implements Comparable<PessoaPrioridade> {
     public int compareTo(PessoaPrioridade outraPessoa) {
         if (this.getPrioridade() && !outraPessoa.getPrioridade()) {
             return -1;
+
         } else if (!this.getPrioridade() && outraPessoa.getPrioridade()){
             return 1;
+            
         }
 
         return this.getNome().compareTo(outraPessoa.getNome());
