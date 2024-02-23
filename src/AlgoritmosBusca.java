@@ -1,6 +1,5 @@
 public class AlgoritmosBusca {
     public static void main(String[] args) {
-        // int[] lista = {64, 34, 25, 12, 22, 11, 90};
         int [] lista = GeraListaDeInteiros.geraLista();
         int valorProcurado = lista[30];
         AlgoritmosOrdenacao.bubbleSortCrescente(lista);
@@ -14,11 +13,6 @@ public class AlgoritmosBusca {
         System.out.println("Item %d encontrado na posição %d.".formatted(valorProcurado, resultadoSequencialOrdenado));
         System.out.println("Item %d encontrado na posição %d.".formatted(valorProcurado, resultadoBinarySearch));
 
-        // if (resultado == -1) {
-        //     System.out.println("Item não encontrado");
-        // } else {
-        //     System.out.println("Item %d encontrado na posição %d.".formatted(valorProcurado, resultado));
-        // }
     }
 
     public static int buscaSequencial(int[] lista, int valorProcurado) {

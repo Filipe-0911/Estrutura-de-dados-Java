@@ -3,7 +3,7 @@ public class AlgoritmosOrdenacao {
         // int[] lista = {64, 34, 25, 12, 22, 11, 90};
         int [] lista = GeraListaDeInteiros.geraLista();
         System.out.println("Lista antes da ordenação.");
-        imprimirLista(lista);
+        // imprimirLista(lista);
         selectionSort(lista);
         System.out.println("\nLista depois da ordenação crescente.");
         imprimirLista(lista);
