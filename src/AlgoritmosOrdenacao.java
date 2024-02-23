@@ -8,7 +8,7 @@ public class AlgoritmosOrdenacao {
         imprimirLista(lista);
 
     }
-    public static void bubbleSortCrescente(int lista []) {
+    public static int[] bubbleSortCrescente(int lista []) {
         int tmp;
         boolean trocou;
         int tamanhoLista = lista.length;
@@ -27,9 +27,10 @@ public class AlgoritmosOrdenacao {
                 break;
             }
         }
+        return lista;
     }
     
-    public static void bubbleSortDecrescente (int lista []) {
+    public static int[] bubbleSortDecrescente (int lista []) {
         int tmp;
         boolean trocou;
         for (int i = 0; i < lista.length; i++) {
@@ -46,9 +47,10 @@ public class AlgoritmosOrdenacao {
                 break;
             }
         }
+        return lista;
     }
 
-    public static void selectionSort(int [] lista) {
+    public static int[] selectionSort(int [] lista) {
         int n = lista.length;
         // Loop externo que percorre a lista
         for (int i = 0; i < n - 1; i++) {
@@ -67,11 +69,16 @@ public class AlgoritmosOrdenacao {
             lista[minIndex] = lista[i];
             lista[i] = temp;
         }
+
+        return lista;
     }
 
     public static void imprimirLista(int [] lista) {
         for (int i = 0; i < lista.length; i++) {
-            System.out.println(lista[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(lista[i]);
         }
         System.out.println();
     }
