@@ -9,8 +9,9 @@ public class GeraListaDeInteiros {
     }
 
     public static int[] geraLista() {
+        int num = 50000;
         
-        int tamanho = 1000;
+        int tamanho = num;
         
         Random random = new Random();
         
@@ -19,10 +20,29 @@ public class GeraListaDeInteiros {
         
         
         for (int i = 0; i < tamanho; i++) {
-            lista[i] = random.nextInt(1000); 
+            lista[i] = random.nextInt(num); 
         }
         
         
         return lista;
+    }
+
+    public static int[] geraListaOrdenada() {
+        int num = 50000;
+        
+        int tamanho = num;
+        
+        Random random = new Random();
+        
+        
+        int[] lista = new int[tamanho];
+        
+        
+        for (int i = 0; i < tamanho; i++) {
+            lista[i] = random.nextInt(num); 
+        }
+        
+        
+        return AlgoritmosOrdenacao.bubbleSortCrescente(lista);
     }
 }
