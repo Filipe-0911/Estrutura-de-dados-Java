@@ -4,7 +4,7 @@ public class AlgoritmosBusca {
         int [] lista = GeraListaDeInteiros.geraLista();
         int valorProcurado = lista[30];
         
-        int resultado = BinarySearch(AlgoritmosOrdenacao.bubbleSortCrescente(lista), valorProcurado);
+        int resultado = binarySearch(AlgoritmosOrdenacao.bubbleSortCrescente(lista), valorProcurado);
         AlgoritmosOrdenacao.imprimirLista(lista);
 
         if (resultado == -1) {
@@ -36,7 +36,7 @@ public class AlgoritmosBusca {
         return -1;
     }
 
-    public static int BinarySearch(int[] lista, int valorProcurado) {
+    public static int binarySearch(int[] lista, int valorProcurado) {
         int esquerda = 0;
         int direita = lista.length -1;
         
