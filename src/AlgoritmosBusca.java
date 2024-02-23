@@ -1,7 +1,8 @@
 public class AlgoritmosBusca {
     public static void main(String[] args) {
-        int[] lista = {64, 34, 25, 12, 22, 11, 90};
-        int valorProcurado = 22;
+        // int[] lista = {64, 34, 25, 12, 22, 11, 90};
+        int [] lista = GeraListaDeInteiros.geraLista();
+        int valorProcurado = lista[30];
         
         int resultado = BinarySearch(AlgoritmosOrdenacao.bubbleSortCrescente(lista), valorProcurado);
         AlgoritmosOrdenacao.imprimirLista(lista);

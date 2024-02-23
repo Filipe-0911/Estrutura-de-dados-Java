@@ -1,6 +1,7 @@
 public class AlgoritmosOrdenacao {
     public static void main(String[] args) {
-        int[] lista = {64, 34, 25, 12, 22, 11, 90};
+        // int[] lista = {64, 34, 25, 12, 22, 11, 90};
+        int [] lista = GeraListaDeInteiros.geraLista();
         System.out.println("Lista antes da ordenação.");
         imprimirLista(lista);
         selectionSort(lista);
