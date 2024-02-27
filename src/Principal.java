@@ -7,6 +7,8 @@ public class Principal {
         fila.inserir("Joaquim");
         fila.inserir("Olavo");
         fila.inserir("Olivia");
+
+        fila.listar();
         
         System.out.println("Elemento atendido: " + fila.atender());
         System.out.println("Pessoas na fila: ");
