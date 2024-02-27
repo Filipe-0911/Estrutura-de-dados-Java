@@ -9,7 +9,7 @@ public class AlgoritmosOrdenacao {
         imprimirLista(lista);
 
     }
-    public static int[] bubbleSortCrescente(int lista []) {
+    public static int[] bubbleSortCrescente(int [] lista) {
         int tmp;
         boolean trocou;
         int tamanhoLista = lista.length;
@@ -31,7 +31,7 @@ public class AlgoritmosOrdenacao {
         return lista;
     }
     
-    public static int[] bubbleSortDecrescente (int lista []) {
+    public static int[] bubbleSortDecrescente (int [] lista) {
         int tmp;
         boolean trocou;
         for (int i = 0; i < lista.length; i++) {
